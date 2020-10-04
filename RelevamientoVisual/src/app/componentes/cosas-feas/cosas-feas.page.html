@@ -1,0 +1,17 @@
+<div class="contenedor">
+
+  <div class="contenedorBotones">
+    <div class="flecha">
+      <img src="../../../assets/imagenes/volver.png" routerLink="/principal">
+    </div>
+    <div class="botones">
+      <button class="botonLogin" (click)="takePicture()">Tomar foto</button>
+      <button class="botonLogin" (click)="AccessGallery()">Subir foto</button>
+      <button class="botonLogin" routerLink="/galeria-feas">Todas las fotos</button>
+      <button class="botonLogin" routerLink="/mas-votadas-feas">Mas Votadas</button>
+    </div>
+  </div>
+  <div class="Cargando" [hidden]="spinner">
+    <img src="../../../assets/imagenes/spinner.gif">
+  </div>
+</div>

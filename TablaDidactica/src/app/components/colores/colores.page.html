@@ -1,0 +1,36 @@
+<div class="contenedor">
+  <img class="img" src="../../../assets/imagenes/volver.png" (click)="GoBack()">
+
+  <div class="idiomas">
+
+    <img src="../../../assets/imagenes/españaIcono.png" (click)="CambiarIdioma('español')"
+      [ngClass]="{seleccionadoIdioma: idioma == 'español'}">
+    <img src="../../../assets/imagenes/portugalicono.png" (click)="CambiarIdioma('portugues')"
+      [ngClass]="{seleccionadoIdioma: idioma == 'portugues'}">
+    <img src="../../../assets/imagenes/inglaterraIcono.png" (click)="CambiarIdioma('ingles')"
+      [ngClass]="{seleccionadoIdioma: idioma == 'ingles'}">
+  </div>
+  <div class="accesosTemas">
+    <img src="../../../assets/imagenes/animales.png" routerLink="/animales/{{this.idioma}}">
+    <img src="../../../assets/imagenes/numeros.png" routerLink="/numeros/{{this.idioma}}">
+  </div>
+
+  <div class="colores">
+
+    <img class="color" src="../../../assets/imagenes/rojo.png"   (click)="Reproducir('rojo')">
+
+
+    <img class="color" src="../../../assets/imagenes/azul.png"   (click)="Reproducir('azul')">
+
+
+    <img class="color" src="../../../assets/imagenes/verde.png"   (click)="Reproducir('verde')">
+
+
+    <img class="color" src="../../../assets/imagenes/violeta.png"   (click)="Reproducir('morado')">
+
+    <img class="color" src="../../../assets/imagenes/amarillo.png"   (click)="Reproducir('amarillo')">
+
+  </div>
+
+
+</div>

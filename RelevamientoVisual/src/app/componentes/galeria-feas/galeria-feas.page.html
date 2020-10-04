@@ -1,0 +1,26 @@
+<div class="contenedor">
+
+  <div class="flecha">
+    <img src="../../../assets/imagenes/volver.png" routerLink="/principal">
+  </div>
+
+  <button (click)="MostrarFotosUser() " *ngIf="!activo">Mis fotos</button>
+  <button class="todas" (click)="MostrarFotosGaleria()" *ngIf="activo">Todas las fotos</button>
+  <div class="grilla" [hidden]="!spinner">
+    <ul>
+      <li *ngFor="let foto of this.listaOrdenada">
+        <p class="usuario">{{foto.usuario}}</p>
+        <img class="foto" alt="" src="{{foto.foto}}">
+        <p>{{foto.fecha}}</p>
+        <span class="error" *ngIf="mensaje"
+          [ngClass]="{favorito: permitirLike == true,error: permitirLike == false}">{{mensaje}} </span>
+        <div (click)="DarLike(foto)" class="like">
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="Cargando" [hidden]="spinner">
+    <img src="../../../assets/imagenes/spinner.gif">
+  </div>
+
+</div>

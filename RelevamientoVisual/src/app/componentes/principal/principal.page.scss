@@ -1,0 +1,94 @@
+.cosasLindasBotonFlex{
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+width: 100%;
+height: 50%;
+}
+
+.contenedor{
+    background :url(../../../assets/imagenes/edificioCosas.jpg);
+}
+
+img{
+    width: 15%;
+    top: -6%;
+    right: 75%;
+   // display:block;
+    margin:20px;
+    position: absolute;
+  }
+
+
+  .Cargando
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    img{
+      position: absolute;
+      left: 30%;
+      width: 35vw;
+      height: 25vh;
+    }
+
+}
+
+
+.cosasFeasBotonFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.cosasFeasBoton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(../../../assets/imagenes/CosasFeas.jpeg);
+    border-radius: 10px;
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    height: 60%;
+    position: relative;
+    top: -5%;
+    
+   /* h1{
+        font-size: 5vh;
+        color: #ffffff;
+    }*/
+    
+}
+.cosasLindasBoton{
+    //right: 20%;
+    background: rgba(0,0,0,.5);
+    border-radius: 10px;
+    box-shadow: 0 30px 40px rgba(0,0,0,.3);
+    background: url(../../../assets/imagenes/CosasLindas.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    top: 5%;
+    width: 80%;
+    height: 60%;
+
+    /*h1{
+        color: #ffffff;
+        font-size: 5vh;
+    }*/
+}

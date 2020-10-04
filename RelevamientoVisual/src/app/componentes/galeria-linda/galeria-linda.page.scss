@@ -1,0 +1,212 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    outline: none;
+
+}
+
+.flecha{
+  width: 15%;
+  top: -4%;
+  right: 75%;
+  margin:20px;
+  position: absolute;
+}
+
+
+.Cargando
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    backdrop-filter: blur(3px);
+    img{
+      position: absolute;
+      left: 30%;
+      width: 35vw;
+      height: 25vh;
+    }
+
+}
+
+
+button{
+position: absolute;
+ top: -0.5%;
+left: 30%;
+  width: 40%;
+  border-radius: 4px;
+  display: inline-block;
+  background-color:#b1e2e7;
+  box-sizing: border-box;
+  color:  black;
+  padding: 8px 24px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif;
+  font-size: 3vh;
+  letter-spacing: 1px;
+
+}
+
+.todas{
+  left: 27%;
+  padding: 0.5px 24px;
+  width: 50%;
+  font-size: 3vh;
+  top: -0.7%;
+}
+
+
+
+.contenedor{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background :url(../../../assets/imagenes/CosasLindasFondo.jpg);
+
+  }
+
+.like{
+    height: 10vh;
+    top: 50%;
+    opacity: 0.5;
+    margin-top: 5px;
+  background:url("../../../assets/imagenes/likeColor.png")no-repeat;
+  background-size: 20%;
+    opacity: 1;
+    position: relative;
+    transition: 0.5s;
+    left: 40%;
+}
+
+.usuario{
+    padding-top: 5px;
+}
+
+
+.error{
+    display: flex;
+    left: 15%;
+    color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 70%;
+    height: 10%;
+    font-size: 1em;
+    border-radius: 4px;
+    top: 49%;
+    font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif;
+    letter-spacing: 1px;
+    -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+              animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    background-color: #7e082f;
+  }
+  
+  @-webkit-keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-1000px);
+              transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-1000px);
+              transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .favorito{
+    display: flex;
+    left: 15%;
+    color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 70%;
+    height: 10%;
+    font-size: 1em;
+    border-radius: 4px;
+    top: 49%;
+    font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif;
+    letter-spacing: 1px;
+    -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+              animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    background-color: #52b639;
+  }
+  
+  @-webkit-keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-1000px);
+              transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-1000px);
+              transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+
+
+
+  .foto
+{
+    width: 70%;
+    height: 40%;
+    margin: 2% 3%;
+    border: 2px solid ghostwhite;
+}
+
+.grilla
+{
+  
+    background: rgba(0,0,0,.5);
+    width: 80%;
+    height: 86%;
+    text-align: center;
+    overflow: scroll;
+    border-radius: 10px;
+
+    p{
+        color: ghostwhite;
+    }
+}

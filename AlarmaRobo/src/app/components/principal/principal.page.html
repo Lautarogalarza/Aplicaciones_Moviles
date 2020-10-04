@@ -1,0 +1,20 @@
+<div class="contenedor">
+  <div class="flecha">
+    <img src="../../../assets/imagenes/volver.png"  routerLink="/login">
+  </div>
+  <div class="imagen">
+    <button class="botonVolver" (click)="ActivarAlarma()" *ngIf="!activo"> ACTIVAR</button>
+    <button class="botonDesactivarAlarma" (click)="ActivarMensaje()" *ngIf="activo"> DESACTIVAR</button>
+
+  </div>
+  <div class="containerMessage" [hidden]="presionadoDesactivar">
+    <div class="mensaje">
+      <h1>Ingrese la clave</h1>
+      <input class="inputDesactivar" type="password" placeholder="clave" [(ngModel)]="clave">
+      <button class="botonDesactivar" (click)="DesactivarAlarma()"> Desactivar</button>
+    </div>
+  </div>
+  <div class="Cargando" [hidden]="spinner">
+    <img src="../../../assets/imagenes/Spinner.gif">
+  </div>
+</div>

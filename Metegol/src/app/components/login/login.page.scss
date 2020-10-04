@@ -1,0 +1,231 @@
+  
+  *{
+    margin: 0%;
+    padding: 0%;
+    outline: none;
+}
+
+  .loginContenedor{
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+
+
+.login-title {
+  width: 100%;
+  height: 30vh;
+
+}
+
+  .botonUsers{
+    width: 100%;
+    padding: 3px 20px;
+    margin: 2px 0;
+    display: inline-block;
+    border-style: solid;
+    background: rgba(43, 92, 44, 0.5);
+   // background-color: transparent;
+    box-sizing: border-box;
+    padding-left: 30px;
+    font-size: 3vh;
+    color: rgb(25, 48, 25);
+
+  }
+
+  .login{
+
+    text-align: center;
+    background: transparent;
+    position: absolute;
+    top: 95%;
+    width: 100vw; 
+    height: 86vh;  
+    transform: translateY(-50%);
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  .subLogin{
+
+    padding: 30 20px;
+    margin: 8px 0;
+  }
+
+  ::placeholder { 
+    color: whitesmoke;
+  }
+
+  .CorreoYPasswd{
+    position: absolute;
+    top: 2%;
+
+  }
+
+  input[type=email],[type=password],textarea{
+    
+    width: 100%;
+    padding: 20px 20px;
+    margin: 10x 0;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+    border-color:  rgba(70, 158, 72, 0.5);
+    display: inline-block;
+    //background: rgba(232, 231, 231, 0.5);
+    background-color: transparent;
+    box-sizing: border-box;
+    padding-left: 30px;
+    font-size: 3vh;
+    color:whitesmoke;
+     
+}
+
+
+
+.error{
+  display: flex;
+  color: whitesmoke;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 80%;
+  height: 10%;
+  font-size: 1em;
+  border-radius: 4px;
+  top: 40%;
+  font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif;
+  letter-spacing: 1px;
+  -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  background-color: #7e082f;
+}
+
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.valorAzul{
+
+  color: #424ab6!important;
+
+}
+
+.valorRojo{
+  color: #d03c3c;
+}
+
+.Cargando
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    height: 100%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    backdrop-filter: (2px);
+    img{
+      position: absolute;
+      left: 30%;
+      width: 30vw;
+      height: 25vh;
+    }
+
+}
+
+
+.botonLogin{
+  width: 40%;
+  display: inline-block;
+  background-color:#d03c3c;
+  border-radius: 20px;
+  box-sizing: border-box;
+  color: whitesmoke;
+  padding: 30px 10px;
+  margin: 15px 0;
+  border: none;
+  font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif;
+  font-size: 2.5vh;
+  font-weight: bold;
+  margin-right: 30px!important;
+
+}
+
+
+.botonLimpiar{
+  width: 40%;
+  display: inline-block;
+  background-color:#424ab6;
+  border-radius: 20px;
+  box-sizing: border-box;
+  color: whitesmoke;
+  padding: 30px 10px;
+  margin: 8px 0;
+  font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif;
+  font-size: 2.5vh;
+  font-weight: bold;
+  margin-left: 30px!important;
+  letter-spacing: 1px;
+
+}
+
+
+
+.botonLogin:active{
+  color: cy;
+}
+
+
+
+label{
+  padding: 12px;
+  background-color: #39E880;
+  display: inline-block;
+  line-height: 2vh;
+  font-size: 3vh;
+  font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif; 
+}
+
+img{
+  width: 15%;
+  display: inline-block;
+float:left;
+margin:8px;
+padding: 0px;
+}
+
+.imagenes{
+  width: 100%;
+  position: relative;
+top: 7%;
+}

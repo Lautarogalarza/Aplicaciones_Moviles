@@ -1,0 +1,353 @@
+  
+  *{
+    margin: 0%;
+    padding: 0%;
+    outline: none;
+}
+
+
+
+
+.loginContenedor{
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+img.kid-learning {
+  position: absolute;
+  width: 55%;
+  right: 22%;
+  top: -5px;
+  display: inline-block;
+}
+
+.login-title {
+width: 100%;
+height: 30vh;
+
+}
+
+.botonUsers{
+display: inline-block;
+background-color:#d98ef3;
+width: 20%;
+color: rgb(31, 31, 31);
+padding: 12px 10px;
+border-style: solid;
+  border-radius: 20px;
+margin-right: 20px!important;
+font-size: 2vh;
+
+}
+
+.login{
+
+  text-align: center;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  width: 100vw; 
+  height: 86vh;  
+  transform: translateY(-50%);
+  border-radius: 15px;
+
+}
+
+.subLogin{
+
+  padding: 30 20px;
+  margin: 8px 0;
+}
+
+::placeholder { 
+  color: blue;
+}
+
+input[type=email],[type=password],textarea{
+  width: 100%;
+  padding: 10px 20px;
+  margin: -10px 0;
+  display: inline-block;
+  border: thin;
+  border-style: solid;
+  border-radius: 20px;
+  border-color:#0044ff;
+  background: whitesmoke;
+ // background-color: transparent;
+  box-sizing: border-box;
+  padding-left: 30px;
+  font-size: 3vh;
+  color: blue;
+   
+}
+
+
+
+.error{
+display: flex;
+color: black;
+align-items: center;
+justify-content: center;
+position: absolute;
+width: 100%;
+height: 10%;
+font-size: 1em;
+top: 87%;
+font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif;
+letter-spacing: 1px;
+background-color: #d25982;
+}
+
+
+.botonLogin{
+width: 40%;
+display: inline-block;
+background-color:#d5fcc7;
+border-radius: 20px;
+box-sizing: border-box;
+color: rgb(31, 31, 31);
+padding: 12px 10px;
+margin: 15px 0;
+border: none;
+font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif;
+font-size: 2vh;
+margin-right: 10px!important;
+
+}
+
+
+.botonLimpiar{
+width: 40%;
+display: inline-block;
+background-color:#e88752;
+border-radius: 20px;
+box-sizing: border-box;
+color: rgb(31, 31, 31);
+padding: 12px 10px;
+margin: 8px 0;
+border: none;
+font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif;
+font-size: 2vh;
+margin-right: 10px!important;
+
+}
+
+
+
+.botonLogin:active{
+color: cy;
+}
+
+ 
+.Cargando
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    height: 100%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    backdrop-filter: (2px);
+    img{
+      position: absolute;
+      left: 30%;
+      width: 25vw;
+      height: 25vh;
+    }
+
+}
+
+
+label{
+padding: 12px;
+background-color: #39E880;
+display: inline-block;
+line-height: 2vh;
+font-size: 3vh;
+font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif; 
+}
+
+
+
+@media (max-width: 720px) and (orientation: landscape){
+
+  .loginContenedor{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  img.kid-learning {
+    position: absolute;
+    width: 16%;
+    right: 40%;
+    top: -6px;
+    display: inline-block;
+  }
+  
+  .login-title {
+  width: 100%;
+  height: 30vh;
+  display: none;
+  
+  }
+  
+  .botonUsers{
+  display: inline-block;
+  background-color:#d98ef3;
+  width: 20%;
+  color: rgb(31, 31, 31);
+  padding: 12px 10px;
+  border-style: solid;
+    border-radius: 20px;
+  margin-right: 20px!important;
+  font-size: 4vh;
+  
+  }
+  
+  .login{
+  
+    text-align: center;
+    background: transparent;
+    position: absolute;
+    top: 80%;
+    width: 100vw; 
+    height: 100vh;  
+    transform: translateY(-50%);
+    border-radius: 15px;
+  }
+  
+  .subLogin{
+  
+    padding: 30 20px;
+    margin: 8px 0;
+  }
+  
+  ::placeholder { 
+    color: blue;
+    font-size: 5h;
+  }
+  
+  input[type=email],[type=password],textarea{
+    width: 100%;
+    padding: 10px 20px;
+    margin: -10px 0;
+    display: inline-block;
+    border: thin;
+    border-style: solid;
+    border-radius: 20px;
+    border-color:#0044ff;
+    background: whitesmoke;
+   // background-color: transparent;
+    box-sizing: border-box;
+    padding-left: 30px;
+    font-size: 5vh;
+    color: blue;
+     
+  }
+  
+  
+  .Cargando
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    backdrop-filter: (2px);
+    img{
+      position: absolute;
+      left: 30%;
+      width: 25vw;
+      height: 30vh;
+    }
+
+}
+
+  
+  .error{
+  display: flex;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  font-size: 1em;
+  top: -25%;
+  font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif;
+  letter-spacing: 1px;
+  background-color: #d25982;
+  }
+  
+  
+  .botonLogin{
+  width: 40%;
+  display: inline-block;
+  background-color:#d5fcc7;
+  border-radius: 20px;
+  box-sizing: border-box;
+  color: rgb(31, 31, 31);
+  padding: 12px 10px;
+  margin: 15px 0;
+  border: none;
+  font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif;
+  font-size: 5vh;
+  margin-right: 10px!important;
+  
+  }
+  
+  
+  .botonLimpiar{
+  width: 40%;
+  display: inline-block;
+  background-color:#e88752;
+  border-radius: 20px;
+  box-sizing: border-box;
+  color: rgb(31, 31, 31);
+  padding: 12px 10px;
+  margin: 8px 0;
+  border: none;
+  font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif;
+  font-size: 5vh;
+  margin-right: 10px!important;
+  
+  }
+  
+  
+  
+  .botonLogin:active{
+  color: cy;
+  }
+  
+  
+  
+  label{
+  padding: 12px;
+  background-color: #39E880;
+  display: inline-block;
+  line-height: 2vh;
+  font-size: 3vh;
+  font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif; 
+  }
+}
+
+

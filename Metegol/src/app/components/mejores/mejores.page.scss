@@ -1,0 +1,116 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 2vh;
+}
+
+table, th, td {
+    border: 1px solid  #C5EDF4;
+    border-left: ghostwhite;
+    border-right: ghostwhite;
+    border-top: ghostwhite;
+  }
+
+  .flecha {
+    position: relative;
+    top: -3%;
+   // right: 20%;
+  }
+
+
+  .titulo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 5%;
+  }
+
+  .Cargando
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    height: 100%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    backdrop-filter: (2px);
+    img{
+      position: absolute;
+      left: 30%;
+      width: 30vw;
+      height: 25vh;
+    }
+
+}
+
+  .Cargando
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    height: 100%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    backdrop-filter: (2px);
+    img{
+      position: absolute;
+      left: 30%;
+      width: 30vw;
+      height: 25vh;
+    }
+
+}
+
+.tabla
+{
+    position: absolute;
+    top: 15%;
+    //left: 15%;
+    transform: rotate(-50%,-50%);
+    border-collapse: collapse;
+    border-radius: 10px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+   // border-color: ghostwhite;
+}
+
+h1{
+    position: relative;
+    top: 60%;
+   // z-index: 1000;
+    color: ghostwhite;
+    font-size: 3vh;
+    align-self: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+
+}
+
+th
+{
+    color: ghostwhite;
+    padding: 2%;
+    border-bottom: 1px solid;
+    border-radius: 15px;
+}
+
+td
+{
+    color: ghostwhite;
+    padding: 2%;
+}

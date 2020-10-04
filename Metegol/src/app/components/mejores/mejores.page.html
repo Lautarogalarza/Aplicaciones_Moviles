@@ -1,0 +1,39 @@
+<div class="contenedor">
+
+  <div class="titulo">
+    <h1>LOS MEJORES</h1>
+  </div>
+  <div class="flecha">
+    <ion-icon
+      (click)="GoBack()"
+      color="primary"
+      style="font-size: 45px"
+      name="arrow-undo"
+    ></ion-icon>
+  </div>
+
+  <div class="grilla">
+   
+    <table class="tabla">
+    
+      <thead>
+        <tr>
+          <th>JUGADOR</th>
+          <th>GANADOS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let jugador of listaCincoMejores">
+          <td>{{jugador.jugador}} </td>
+          <td>{{jugador.victorias}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="Cargando" [hidden]="spinner">
+      <img src="../../../assets/imagenes/spinner.gif">
+    </div>
+
+  </div>
+
+  
+</div>

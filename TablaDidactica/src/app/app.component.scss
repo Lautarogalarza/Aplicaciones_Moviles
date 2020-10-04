@@ -1,0 +1,95 @@
+
+    #fondo{
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      width: 100vw;
+      height: 100vh;
+      background: url("../assets/imagenes/splashChicos.png") no-repeat center / cover;
+  }
+
+  #logoSplash{ 
+      height: 60vh;
+      width: 60vw;
+      display: flex;
+      left: 21vw;
+      bottom: 25vh;
+      align-items: center;
+      justify-content: center;
+      animation: bounce 0.3s infinite alternate;
+      -webkit-animation: bounce 0.3s infinite alternate;
+      position: absolute;
+  }
+  
+
+  @keyframes bounce {
+      from {
+        transform: translateY(0px);
+      }
+      to {
+        transform: translateY(-15px);
+      }
+    }
+    @-webkit-keyframes bounce {
+      from {
+        transform: translateY(0px);
+      }
+      to {
+        transform: translateY(-15px);
+      }
+    }
+
+
+
+
+
+@media (max-width: 720px) and (orientation: landscape)
+{
+  
+  #fondo{
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      width: 100vw;
+      height: 100vh;
+      background: url("../assets/imagenes/splashChicoshorizontal.png") no-repeat center / cover;
+  }
+  
+  #logoSplash{ 
+      height: 30vh;
+      width: 30vw;
+      display: flex;
+      left: 35vw;
+      bottom: 35vh;
+      align-items: center;
+      justify-content: center;
+      animation: bounce 0.3s infinite alternate;
+      -webkit-animation: bounce 0.3s infinite alternate;
+      position: absolute;
+  }
+  
+  
+  @keyframes bounce {
+      from {
+        transform: translateY(0px);
+      }
+      to {
+        transform: translateY(-15px);
+      }
+    }
+    @-webkit-keyframes bounce {
+      from {
+        transform: translateY(0px);
+      }
+      to {
+        transform: translateY(-15px);
+      }
+    }
+}
+
+
+
+
+

@@ -1,0 +1,63 @@
+<ion-list>
+  <ion-item color="primary">
+    <ion-label>Usuarios</ion-label>
+    <ion-select [(ngModel)]="usuarios" (ionChange)="cambio($event)" interface="popover">
+
+      <ion-select-option>Admin</ion-select-option>
+      <ion-select-option>Usuario</ion-select-option>
+      <ion-select-option>Invitado</ion-select-option>
+      <ion-select-option>Anonimo</ion-select-option>
+      <ion-select-option>Tester</ion-select-option>
+
+    </ion-select>
+  </ion-item>
+</ion-list>
+<div class="contenedor">
+
+
+  <div class="login-title">
+    <img src="../../../assets/imagenes/qr-imagen.png" alt="Avatar" class="kid-learning" max-width="104">
+  </div>
+
+  <div class="loginContenedor">
+
+    <div *ngIf="error" class="error">
+      <span> {{error}}</span>
+    </div>
+    <div class="login">
+
+      <div class="subLogin">
+
+        <ion-item>
+          <ion-label position="floating" color="primary">
+            Correo Electrónico 
+          </ion-label>
+          <ion-input [(ngModel)]="usuario.email" color="primary" type="email" maxlength="30"></ion-input>
+        </ion-item>
+
+
+        <br>
+        <ion-item>
+          <ion-label position="floating" color="primary">Contraseña</ion-label>
+          <ion-input type="password" color="primary" [(ngModel)]="usuario.password" maxlength="8"></ion-input>
+        </ion-item>
+
+
+        <br>
+        <br>
+        <button class="botonLogin" (click)="OnSubmitLogin()">Iniciar Sesión</button>
+
+        <button class="botonLogin" (click)="Limpiar()">Limpiar</button>
+
+
+      </div>
+      
+    </div>
+    
+    <div class="Cargando" [hidden]="spinner">
+      <img src="../../../assets/imagenes/Spinner.gif">
+    </div>
+    
+  </div>
+
+</div>

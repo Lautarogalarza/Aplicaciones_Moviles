@@ -1,0 +1,168 @@
+@media (orientation: portrait){
+
+.idiomas{
+    display: block;
+    width: 47%;
+    position: relative;
+    top: 45%;
+     transform: translateY(-50%);
+
+
+}
+
+.img{
+    display:block;
+    margin:auto;
+    width: 50%;
+    transition: 1s;
+}
+
+.img:active
+{
+    transform:scale(1.5);
+}
+
+
+
+
+.aReproducir{
+   display: block;
+   left:50%;
+   width: 47%;
+   position: relative;
+   top: -35.2%;
+   transform: translateY(-50%);
+}
+
+.seguir{
+    background:transparent;
+    display:inline-block;
+    width:50%;
+    margin-top:10px;
+}
+
+.volver{
+    margin-top:10px;
+ background:transparent;
+display:inline-block;
+width:50%;
+}
+
+
+.seleccionadoTema{
+    transform:scale(1.05);
+}
+
+.seleccionadoIdioma{
+    transform:scale(1.05);
+}
+
+.Cargando
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    height: 100%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    backdrop-filter: (2px);
+    img{
+      position: absolute;
+      left: 30%;
+      width: 25vw;
+      height: 25vh;
+    }
+
+}
+
+
+}
+
+@media (max-width: 720px) and (orientation: landscape){
+
+.idiomas{
+    display: flex;
+    justify-content: center;
+
+
+}
+
+img{
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+.img{
+    display:block;
+    margin:auto;
+    width: 40%;
+    transition: 1s;
+}
+
+.img:active
+{
+    transform:scale(1.5);
+}
+
+
+ 
+.Cargando
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    backdrop-filter: (2px);
+    img{
+      position: absolute;
+      left: 30%;
+      width: 25vw;
+      height: 30vh;
+    }
+
+}
+
+
+.aReproducir{
+    display: flex;
+    justify-content: center;
+}
+
+.seguir{
+    background:transparent;
+    display:inline-block;
+    width:50%;
+    margin-top:10px;
+}
+
+.volver{
+    margin-top:10px;
+ background:transparent;
+display:inline-block;
+width:50%;
+}
+
+
+.seleccionadoTema{
+    transform:scale(1.05);
+}
+
+.seleccionadoIdioma{
+    transform:scale(1.05);
+}
+
+
+}

@@ -1,0 +1,147 @@
+
+
+.imagen{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    position: relative;
+     top: 30%;
+     transform: translateY(-50%);
+     h2{
+       color: white;
+     }
+}
+
+
+
+
+
+@keyframes blink{
+  0%{opacity: 0;}
+  50%{opacity: .5;}
+  100%{opacity: 1;}
+  }
+
+
+
+img{
+    width: 20%;
+    display:block;
+    margin:20px;
+  }
+
+.inputDesactivar{
+    width: 80%;
+    padding: 12px 20px;
+    display: inline-block;
+    border-style: solid;
+    border-color:black;
+    background-color: transparent;
+    box-sizing: border-box;
+    border: solid;
+    color: black;
+  }
+      ::placeholder{
+        color: black!important;
+      }
+
+.botonDesactivar{
+  width: 80%;
+  display: inline-block;
+  background-color:black;
+  box-sizing: border-box;
+  color:  #d4af37;
+  padding: 12px 24px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif;
+  font-size: 3.5vh;
+  
+}
+
+.containerMessage{
+  width: 100vw;
+  height: 30vh;
+  //left: 15%;
+  top: 35%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+
+.mensaje{
+  text-align: center;
+  width: 100vw;
+  border-radius: 4px;
+  background-color: #d4af37;
+
+}
+
+
+.botonVolver{
+
+    width: 100%;
+    display: inline-block;
+    background-color:transparent;
+    box-sizing: border-box;
+    color:  #d4af37;
+    padding: 120px 24px;
+    margin: 8px 0;
+    border: solid;
+    border-width: 10px;
+    border-color:  #d4af37;
+    cursor: pointer;
+    font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif;
+    font-size: 10vh;
+    letter-spacing: 2px;
+  
+  }
+
+    .Cargando
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    backdrop-filter: (2px);
+    img{
+      position: absolute;
+      left: 30%;
+      width: 35vw;
+      height: 35vh;
+    }
+
+}
+
+  .botonDesactivarAlarma{
+
+    width: 100%;
+    display: inline-block;
+    background-color:transparent;
+    box-sizing: border-box;
+    color:  #ff0000;
+    padding: 220px 24px;
+    margin: 8px 0;
+    border-width: 15px!important;
+    border: solid;
+    font-weight: bold;
+    border-color:  #ff0000;
+    cursor: pointer;
+    font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif;
+    font-size: 7vh;
+    letter-spacing: 1px;
+    animation: blink 0.7s linear infinite;
+  }
+  
+  .botonVolver:active{
+    color: green;
+  }

@@ -1,0 +1,56 @@
+<div class="contenedor">
+  <div class="volver">
+    <img class="img" src="../../../assets/imagenes/volver.png" (click)="GoBack()">
+  </div>
+  <div class="seguir">
+    <img class="img" src="../../../assets/imagenes/seguir.png" (click)="CambiarComponente()">
+  </div>
+
+  <div class="idiomas">
+
+    <div class="españa">
+      <img src="../../../assets/imagenes/españa.png" (click)="elegirIdioma('español')"
+        [ngClass]="{seleccionadoIdioma: valorIdioma == 'español'}">
+
+    </div>
+    <div class="portugal">
+      <img src="../../../assets/imagenes/portugal.png" (click)="elegirIdioma('portugues')"
+        [ngClass]="{seleccionadoIdioma: valorIdioma == 'portugues'}">
+
+    </div>
+    <div class="inglaterra">
+      <img src="../../../assets/imagenes/inglaterra.png" (click)="elegirIdioma('ingles')"
+        [ngClass]="{seleccionadoIdioma: valorIdioma == 'ingles'}">
+
+    </div>
+
+
+  </div>
+  <div class="aReproducir">
+
+    <div>
+      <img class="numeros" src="../../../assets/imagenes/numeros.png" (click)="elegirTema('numeros')"
+        [ngClass]="{seleccionadoTema: valorTema == 'numeros'}">
+
+    </div>
+
+    <div class="colores">
+      <img src="../../../assets/imagenes/colores.png" (click)="elegirTema('colores')"
+        [ngClass]="{seleccionadoTema: valorTema == 'colores'}">
+
+    </div>
+
+    <div class="inglaterra">
+      <img src="../../../assets/imagenes/animales.png" (click)="elegirTema('animales')"
+        [ngClass]="{seleccionadoTema: valorTema == 'animales'}">
+
+    </div>
+
+
+  </div>
+
+  <div class="Cargando" [hidden]="spinner">
+    <img src="../../../assets/imagenes/Spinner.gif">
+  </div>
+
+</div>

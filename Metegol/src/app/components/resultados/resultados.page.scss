@@ -1,0 +1,137 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 2vh;
+}
+
+
+.foto
+{
+    width: 70%;
+    margin: 2% 3%;
+    border: 2px solid ghostwhite;
+}
+
+
+.flecha {
+  position: relative;
+  top: -3%;
+}
+
+.Cargando
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    height: 100%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    backdrop-filter: (2px);
+    img{
+      position: absolute;
+      left: 30%;
+      width: 30vw;
+      height: 25vh;
+    }
+
+}
+
+.botonMejores{
+  
+  background-color:#d03c3c;
+  color: ghostwhite;
+  width: 25%;
+  float: right;
+  padding: 12px 10px;
+  font-size: 2vh;
+  border-radius: 20px;
+  z-index: 1000;
+}
+
+.boton{
+  position: relative;
+  top:-1%;
+  z-index: 1001;
+}
+
+
+.titulo{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  top: 5%;
+}
+
+.grilla{
+  max-height: 500px;
+  overflow: auto;
+}
+
+.tabla
+{
+ // position: absolute;
+  top: 15%;
+  transform: rotate(-50%,-50%);
+  border-collapse: collapse;
+  border-radius: 10px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+h1{
+  position: relative;
+  top: 60%;
+  // z-index: 1000;
+  color: ghostwhite;
+  font-size: 3vh;
+  align-self: center;
+  letter-spacing: 1px;
+  font-weight: bold;
+  
+}
+
+
+
+
+
+table, th, td {
+    overflow: scroll;
+    border: 1px solid  #C5EDF4;
+    border-left: ghostwhite;
+    border-right: ghostwhite;
+    border-top: ghostwhite;
+  }
+
+
+
+  table
+  {
+      margin: 10% auto;
+      width: 100%;
+  }
+  
+
+th
+{
+  width: 20%;
+  color: ghostwhite;
+  padding: 2%;
+  border-bottom: 1px solid;
+  border-radius: 15px;
+}
+
+td
+{
+    color: ghostwhite;
+    padding: 2%;
+}

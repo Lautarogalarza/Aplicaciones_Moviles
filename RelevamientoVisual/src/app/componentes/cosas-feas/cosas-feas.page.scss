@@ -1,0 +1,82 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    outline: none;
+
+}
+
+img{
+    width: 15%;
+    top: -4%;
+    right: 75%;
+    margin:20px;
+    position: absolute;
+  }
+  .Cargando
+  {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-content: center;
+      justify-content: center;
+      position: absolute;
+      top: 85%; 
+      width: 100vw;
+      height: 100vh;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      img{
+        position: absolute;
+        left: 30%;
+        width: 35vw;
+        height: 25vh;
+      }
+  
+  }
+.botones{
+
+    text-align: center;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    top: 50%;
+    width: 85vw; 
+    height: 86vh;  
+    transform: translateY(-50%);
+    border-radius: 10px;
+    box-shadow: 0 30px 40px rgba(0,0,0,.3);
+    overflow: hidden;
+  }
+
+  .contenedorBotones{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background :url(../../../assets/imagenes/CosasFeasFondo.jpg);
+  }
+
+.botonLogin{
+    top: 10%;
+    position: relative;
+    width: 90%;
+    display: inline-block;
+    background-color:#b1e2e7;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: rgb(27, 27, 27);
+    padding: 18px 24px;
+    margin: 20px 0;
+    border: none;
+    cursor: pointer;
+    font-family:  Arial, "Helvetica Condensed", Helvetica, sans-serif;
+    font-size: 4.5vh;
+    letter-spacing: 1px;
+  
+  }
+  
+  .botonLogin:active{
+    color: cyan;
+  }
+  

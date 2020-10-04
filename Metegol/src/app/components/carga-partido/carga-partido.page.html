@@ -1,0 +1,36 @@
+<div class="contenedor">
+  <div class="boton">
+    <button class="botonMejores" routerLink="/resultados">RESULTADOS</button>
+  </div>
+  <div class="flecha">
+    <ion-icon (click)="GoBack()" color="primary" style="font-size: 45px" name="arrow-undo"></ion-icon>
+  </div>
+
+  <div class="carga">
+    <div *ngIf="mensaje" class="error">
+      <span> {{mensaje}}</span>
+    </div>
+    <div class="Cargando" [hidden]="spinner">
+      <img src="../../../assets/imagenes/spinner.gif">
+    </div>
+
+    <button class="botonCarga" (click)="CargarPartido()">CARGAR PARTIDO</button>
+
+    <input class="jugador1" type="text" placeholder="Jugador 1" [(ngModel)]="jugador1">
+    <button class="botonMenos" (click)="RestarAzul()">-</button>
+    <span class="valorAzul"> {{valorEquipoAzul}} </span>
+    <button class="botonMas" (click)="CargarAzul()">+</button>
+    <input class="fecha" type="date" [(ngModel)]="fecha">
+
+    <input class="jugador2" type="text" placeholder="Jugador 2" [(ngModel)]="jugador2">
+    <button class="botonMenosP2" (click)="RestarRojo()">-</button>
+    <span class="valorRojo"> {{valorEquipoRojo}} </span>
+    <button class="botonMasP2" (click)="CargarRojo()">+</button>
+
+
+    <button class="botonFoto" (click)="SacarFoto()">
+      <ion-icon name="camera-outline" style="font-size: 75px"></ion-icon>
+    </button>
+  </div>
+
+</div>

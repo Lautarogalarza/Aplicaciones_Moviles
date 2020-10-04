@@ -1,0 +1,41 @@
+<div class="contenedor">
+
+  <div class="loginContenedor">
+
+    <div *ngIf="error" class="error">
+      <span> {{error}}</span>
+    </div>
+    <div class="CorreoYPasswd">
+
+      <input type="email" id="#fname" class="sinError" name="firstname" placeholder="Correo Electrónico"
+        [(ngModel)]="usuario.email">
+
+      <input type="password" id="#lname" class="sinError" name="lastname" placeholder="Contraseña"
+        [(ngModel)]="usuario.password">
+    </div>
+
+    <form class="login">
+      <div class="subLogin">
+
+
+        <button class="botonLogin" (click)="OnSubmitLogin()">Iniciar Sesión</button>
+
+        <button class="botonLimpiar" (click)="Limpiar()">Limpiar</button>
+
+        </div>
+            <div class="imagenes">
+              
+              <img src="../../../assets/imagenes/pelota.png" (click)="Cargar1()">
+              <img src="../../../assets/imagenes/pelota.png" (click)="Cargar2()">
+              <img src="../../../assets/imagenes/pelota.png" (click)="Cargar3()">
+              <img src="../../../assets/imagenes/pelota.png" (click)="Cargar4()">
+              <img src="../../../assets/imagenes/pelota.png" (click)="Cargar5()">
+              
+            </div>
+    </form>
+    <div class="Cargando" [hidden]="spinner">
+      <img src="../../../assets/imagenes/spinner.gif">
+    </div>
+  </div>
+
+</div>

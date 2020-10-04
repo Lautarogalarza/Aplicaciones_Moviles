@@ -1,0 +1,36 @@
+<div class="contenedor">
+  <img class="img" src="../../../assets/imagenes/volver.png" (click)="GoBack()">
+
+  <div class="idiomas">
+
+    <img src="../../../assets/imagenes/españaIcono.png" (click)="CambiarIdioma('español')"
+      [ngClass]="{seleccionadoIdioma: idioma == 'español'}">
+    <img src="../../../assets/imagenes/portugalicono.png" (click)="CambiarIdioma('portugues')"
+      [ngClass]="{seleccionadoIdioma: idioma == 'portugues'}">
+    <img src="../../../assets/imagenes/inglaterraIcono.png" (click)="CambiarIdioma('ingles')"
+      [ngClass]="{seleccionadoIdioma: idioma == 'ingles'}">
+  </div>
+  <div class="accesosTemas">
+    <img src="../../../assets/imagenes/colores.png" routerLink="/colores/{{this.idioma}}">
+    <img src="../../../assets/imagenes/animales.png" routerLink="/animales/{{this.idioma}}">
+  </div>
+  <div class="numeros">
+
+    <img class="numero" src="../../../assets/imagenes/uno.png" (click)="Reproducir('uno')">
+
+
+    <img class="numero" src="../../../assets/imagenes/dos.png" (click)="Reproducir('dos')">
+
+
+    <img class="numero" src="../../../assets/imagenes/tres.png" (click)="Reproducir('tres')">
+
+
+    <img class="numero" src="../../../assets/imagenes/cuatro.png" (click)="Reproducir('cuatro')">
+
+    <img class="numero" src="../../../assets/imagenes/cinco.png" (click)="Reproducir('cinco')">
+
+
+  </div>
+
+
+</div>

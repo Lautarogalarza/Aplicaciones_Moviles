@@ -1,0 +1,55 @@
+<div class="contenedor">
+
+  <div class="loginContenedor">
+
+    <form class="login">
+
+      <div class="subLogin">
+
+        <div class="inputsIconA">
+
+          <ion-icon name="mail-outline"></ion-icon>
+          <input type="email" id="#fname" class="sinError" name="firstname" placeholder="Correo Electrónico "
+            [(ngModel)]="usuario.email">
+        </div>
+        <div>
+
+
+          <br>
+          <div class="inputsIconB">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <input type="password" id="#lname" class="sinError" name="lastname" placeholder="Contraseña" maxlength="8"
+              [(ngModel)]="usuario.password">
+            <br>
+          </div>
+
+
+          <ul class="list-group" id="ulala">
+            <li class="list-group-item" *ngFor="let item of usuarios">
+              <input type="radio" name="list_name" value="{{item}}" (change)="OnItemChange($event)" />
+              {{item}}
+
+            </li>
+          </ul>
+
+        </div>
+
+        <div *ngIf="error" class="error">
+          <span> {{error}}</span>
+        </div>
+
+
+        <button class="botonLogin" (click)="OnSubmitLogin()">Iniciar Sesión</button>
+
+        <button class="botonLogin" (click)="Limpiar()">Limpiar</button>
+
+
+      </div>
+  
+    </form>
+    <div class="Cargando" [hidden]="spinner">
+      <img src="../../../assets/imagenes/Spinner.gif">
+    </div>
+  </div>
+
+</div>

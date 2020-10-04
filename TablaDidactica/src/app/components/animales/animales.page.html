@@ -1,0 +1,42 @@
+<div class="contenedor">
+  <img class="img" src="../../../assets/imagenes/volver.png" (click)="GoBack()">
+
+  <div class="idiomas">
+
+    <img src="../../../assets/imagenes/españaIcono.png" (click)="CambiarIdioma('español')"
+      [ngClass]="{seleccionadoIdioma: idioma == 'español'}">
+    <img src="../../../assets/imagenes/portugalicono.png" (click)="CambiarIdioma('portugues')"
+      [ngClass]="{seleccionadoIdioma: idioma == 'portugues'}">
+    <img src="../../../assets/imagenes/inglaterraIcono.png" (click)="CambiarIdioma('ingles')"
+      [ngClass]="{seleccionadoIdioma: idioma == 'ingles'}">
+  </div>
+  <div class="accesosTemas">
+    <img src="../../../assets/imagenes/colores.png" routerLink="/colores/{{this.idioma}}">
+    <img src="../../../assets/imagenes/numeros.png" routerLink="/numeros/{{this.idioma}}">
+  </div>
+
+  <div class="animales">
+
+    <img class="animal" src="../../../assets/imagenes/caballo.png" 
+      (click)="Reproducir('caballo')">
+
+
+    <img class="animal" src="../../../assets/imagenes/pato.png" 
+      (click)="Reproducir('pato')">
+
+
+    <img class="animal" src="../../../assets/imagenes/cerdo.png" 
+      (click)="Reproducir('cerdo')">
+
+
+    <img class="animal" src="../../../assets/imagenes/oveja.png" 
+      (click)="Reproducir('oveja')">
+
+    <img class="animal" src="../../../assets/imagenes/vaca.png"
+      (click)="Reproducir('vaca')">
+
+
+  </div>
+
+
+</div>

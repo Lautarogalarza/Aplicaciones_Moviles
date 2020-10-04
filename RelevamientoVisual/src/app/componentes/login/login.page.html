@@ -1,0 +1,50 @@
+<div class="contenedor">
+
+  <div class="loginContenedor">
+
+    <form class="login">
+
+      <div *ngIf="error" class="error">
+        <span> {{error}}</span>
+      </div>
+
+      <div class="subLogin">
+
+        <div class="inputsIconA">
+
+          <ion-icon name="mail-outline"></ion-icon>
+          <input type="email" id="#fname" class="sinError" name="firstname" placeholder="Correo Electrónico"
+            [(ngModel)]="usuario.email">
+
+        </div>
+
+        <br>
+        <div class="inputsIconB">
+          <ion-icon name="lock-closed-outline"></ion-icon>
+          <input type="password" id="#lname" class="sinError" name="lastname" placeholder="Contraseña"
+            [(ngModel)]="usuario.password">
+          <br>
+        </div>
+        <br>
+        <select id="miselect" class="selectUsers" (change)="cambio($event)">
+          <option disabled selected hidden>Seleccione un usuario </option>
+          <option [value]="item" *ngFor="let item of usuarios">{{item}}</option>
+
+        </select>
+        <br>
+        <br>
+        <button class="botonLogin" (click)="OnSubmitLogin()">Iniciar sesión</button>
+        <br>
+        <br>
+        <button class="botonLogin" (click)="Limpiar()">Limpiar</button>
+
+      </div>
+
+    </form>
+
+    <div class="Cargando" [hidden]="spinner">
+      <img src="../../../assets/imagenes/spinner.gif">
+    </div>
+  </div>
+
+</div>

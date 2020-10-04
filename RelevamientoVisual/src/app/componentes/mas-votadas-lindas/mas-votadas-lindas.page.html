@@ -1,0 +1,21 @@
+<div class="contenedor">
+  <div class="flecha">
+    <img src="../../../assets/imagenes/volver.png" routerLink="/principal">
+  </div>
+  <div class="grilla">
+    <ul>
+      <li *ngFor="let foto of this.listaFotos">
+        <p class="usuario">{{foto.usuario}}</p>
+        <img class="foto" alt="" src="{{foto.foto}}">
+        <p>{{foto.fecha}}</p>
+        <span class="error" *ngIf="mensaje"
+          [ngClass]="{favorito: permitirLike == true,error: permitirLike == false}">{{mensaje}} </span>
+        <p class="bold"> ME GUSTA-{{foto.cantLikes}}</p>
+      </li>
+    </ul>
+  </div>
+  <div class="Cargando" [hidden]="spinner">
+    <img src="../../../assets/imagenes/spinner.gif">
+  </div>
+
+</div>

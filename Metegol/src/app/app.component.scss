@@ -1,0 +1,82 @@
+
+
+    #fondo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        width: 100vw;
+        height: 100vh;
+        background: url("../assets/imagenes/splashMetegol.png") no-repeat center / cover;
+    }
+
+    #logoSplash{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        left: 2vw;
+        bottom: 5vh;
+        align-items: center;
+        justify-content: center;
+        animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite;
+        animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite;
+        position: absolute;
+    }
+    
+
+    @keyframes shake-horizontal {
+        0%,
+        100% {
+          transform: translateX(0);
+                  transform: translateX(0);
+        }
+        10%,
+        30%,
+        50%,
+        70% {
+         transform: translateX(-10px);
+                  transform: translateX(-10px);
+        }
+        20%,
+        40%,
+        60% {
+          transform: translateX(10px);
+                  transform: translateX(10px);
+        }
+        80% {
+          transform: translateX(8px);
+                  transform: translateX(8px);
+        }
+        90% {
+          transform: translateX(-8px);
+                  transform: translateX(-8px);
+        }
+      }
+      @keyframes shake-horizontal {
+        0%,
+        100% {
+          transform: translateX(0);
+                  transform: translateX(0);
+        }
+        10%,
+        30%,
+        50%,
+        70% {
+          transform: translateX(-10px);
+                  transform: translateX(-10px);
+        }
+        20%,
+        40%,
+        60% {
+          transform: translateX(10px);
+                  transform: translateX(10px);
+        }
+        80% {
+          transform: translateX(8px);
+                  transform: translateX(8px);
+        }
+        90% {
+          transform: translateX(-8px);
+                  transform: translateX(-8px);
+        }
+      }

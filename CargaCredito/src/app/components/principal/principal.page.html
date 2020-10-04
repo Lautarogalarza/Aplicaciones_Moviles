@@ -1,0 +1,32 @@
+<div class="contenedor">
+  <div class="principalContenedor">
+    
+    <div class="flecha">
+      <ion-icon
+        (click)="GoBack()"
+        color="primary"
+        style="font-size: 45px"
+        name="arrow-undo"
+      ></ion-icon>
+    </div>
+    <div class="principal">
+      <div *ngIf="error" class="error">
+        <span> {{error}}</span>
+      </div>
+      <div class="carga">
+        <h1>CARGA DE CREDITO</h1>
+      </div>
+
+      <button class="botonCargar" (click)="CargarQR()">CARGAR</button>
+
+      <div class="saldo">
+        <h2>SALDO</h2>
+        <h3>{{valorBind}}</h3>
+      </div>
+    </div>
+    <button class="botonLimpiar" (click)="Limpiar()">LIMPIAR</button>
+    <div class="Cargando" [hidden]="spinner">
+      <img src="../../../assets/imagenes/Spinner.gif">
+    </div>
+  </div>
+</div>
